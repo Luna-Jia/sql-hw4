@@ -43,15 +43,10 @@ session_start();
 
             // Update the student's score and completion status
             $updateQuery = "UPDATE students SET score = $score, complete = 'Done' WHERE code = '$userCode'";
-            if (!mysqli_query($db, $updateQuery)) {
-                echo "<p class='alert alert-danger'>Failed to update the score: " . mysqli_error($db) . "</p>";
-            } else {
-                // Display the final score
-                echo "<p class='alert alert-success'>Your final score is: $score</p>";
-            }
+           
+            echo "<p class='alert alert-success'>Your final score is: $score</p>";
+            
 
-            // Close the database connection
-            mysqli_close($db);
         }
         ?>
     </div>

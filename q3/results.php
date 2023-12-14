@@ -60,7 +60,5 @@ $result = mysqli_query($db, "SELECT * FROM students");
 </body>
 </html>
 <?php
-// Close the database connection
-mysqli_close($db);
 ?>
 

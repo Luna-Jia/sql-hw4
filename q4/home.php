@@ -42,7 +42,7 @@ $loggedIn = isset($_SESSION['userid']);
             ?>
 
             <!-- Display a personalized welcome message for the logged-in user -->
-            <h2>Welcome, <?php echo htmlspecialchars($name); ?>!</h2>
+            <h2>Welcome, <?php echo ($name); ?>!</h2>
 
             <!-- Navigation buttons for different pages -->
             <a href="home.php" class="btn btn-primary">Home</a>
