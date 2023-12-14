@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Welcome to University Cost Evaluation</title>
+    <!-- Linking Bootstrap CSS for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Main container for content alignment -->
+    <div class="container mt-5">
+        <!-- Title of the page -->
+        <h1 class="text-center mb-4">Welcome to University Cost Evaluation</h1>
+
+        <!-- Form for collecting number of credits, now submits to status.php -->
+        <form action="status.php" method="get" class="card p-4">
+            <!-- Form group for better alignment and styling -->
+            <div class="form-group">
+                <!-- Label for the credits input field -->
+                <label for="credits">Enter Number of Credits:</label>
+                <!-- Input field for credits, with Bootstrap styling -->
+                <input type="number" class="form-control" id="credits" name="credits">
+            </div>
+            <!-- Button to submit the form -->
+            <button type="submit" class="btn btn-primary">Next</button>
+        </form>
+    </div>
+</body>
+</html>
