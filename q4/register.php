@@ -1,5 +1,4 @@
 <?php
-
 // Directly establish a connection to the database using mysqli_connect
 $db = mysqli_connect('127.0.0.1', 'root', 'password2', 'db7');
 
@@ -25,11 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         $insert_sql = "INSERT INTO users (id, password, name, email, visits, last) VALUES ('$userid', '$password', '$name', '$email', 0, NOW())";
         
         if (mysqli_query($db, $insert_sql) === TRUE) {
-            // Successful insert, display confirmation
-            echo "<div class='alert alert-success' role='alert'>
-                    Registration successful!
-                  </div>
-                  <a href='login.html' class='btn btn-primary'>Go to Login</a>";
+            // Successful insert, display confirmation with a button link to the login page
+            echo "<div class='alert alert-success text-center' role='alert'>
+                    Registration successful! <br><br>
+                    <a href='login.html' class='btn btn-primary'>Go to Login</a>
+                  </div>";
         } else {
             // Display an error if the query failed
             echo "Error: " . $insert_sql . "<br>" . mysqli_error($db);
