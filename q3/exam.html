@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- Setting the title of the webpage -->
+    <title>Exam Entry</title>
+    <!-- Linking Bootstrap CSS for styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Bootstrap container for centering the content -->
+    <div class="container mt-5">
+        <!-- Centered heading for the form -->
+        <h1 class="text-center">Enter Exam Passcode</h1>
+        <!-- Form for entering the exam passcode. On submission, it will redirect to 'exam.php' -->
+        <form method="get" action="exam.php" class="mt-4">
+            <!-- Form group for better alignment and spacing of form elements -->
+            <div class="form-group">
+                <!-- Label for the passcode input field -->
+                <label for="code">Passcode:</label>
+                <!-- Input field for entering the passcode -->
+                <input type="text" class="form-control" id="code" name="code">
+            </div>
+            <!-- Submit button for the form -->
+            <button type="submit" class="btn btn-primary">Enter Exam</button>
+        </form>
+    </div>
+    
+</body>
+</html>
